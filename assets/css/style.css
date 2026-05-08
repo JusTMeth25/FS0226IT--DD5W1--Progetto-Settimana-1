@@ -119,11 +119,11 @@ main section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-main section h2::before {
-  content: "— ";
-}
-
 /*Tabella competenze con livelli*/
+
+#skills tr {
+    border-bottom: 1px solid #999;
+}
 
 #Competenze h2 {
   margin-bottom: 0px;
@@ -134,6 +134,8 @@ main section h2::before {
 }
 #skills {
   width: 100%;
+  border-collapse: collapse;
+  border: none;
 }
 
 .stack-tecnico {
@@ -141,14 +143,6 @@ main section h2::before {
   margin-bottom: 5px;
   color: rgb(29, 109, 112);
   font-style: italic;
-}
-
-#skills table caption,
-table th,
-table td,
-table tbody {
-  border-collapse: collapse;
-  border: none;
 }
 
 .titolo-tecnologia {
@@ -224,7 +218,7 @@ td {
 }
 
 #Esperienze table tr {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #999;
   padding: 8px;
   text-align: left;
 }
