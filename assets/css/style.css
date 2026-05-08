@@ -1,0 +1,275 @@
+/*CSS Reset*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*header*/
+#site-header {
+    background-color: hsl(220, 40%, 20%);
+    background-image: url(../img/pexels-davide-robetti-1119720888-29773799.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.4;
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid #316A6B;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#site-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#site-header nav {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+/*body*/
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #344F86;
+    background-color: #fafafa;
+}
+
+/*main e main section*/
+main {
+    max-width: 920px;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+main section {
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+main section h2::before {
+    content: '— ';
+    color: #316A6B;
+}
+
+/*table esperienze*/
+table {
+    border-collapse: collapse;
+}
+
+th,
+td,
+caption {
+    border: 1px solid black;
+
+}
+
+
+.tagline {
+    color: hsl(220, 60%, 30%);
+    font-style: italic;
+}
+
+/*menu nav*/
+nav a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 3;
+}
+
+nav a:hover {
+    color: aquamarine;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+nav ul {
+    padding-inline-start: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav li:hover {
+    background-color: rgba(255, 252, 252, 0.642);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Titoli del main */
+h2 {
+    font-size: 1.8rem;
+    color: hsl(220, 60%, 30%);
+    text-align: left;
+    line-height: 2.4;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: hsl(220, 30%, 25%);
+    text-align: left;
+    line-height: 2.2;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/*chi-sono*/
+#Chi-sono {
+    background-color: #ffffff;
+    text-align: justify;
+}
+
+#Chi-sono p:first-of-type {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #7B8393;
+}
+
+#Chi-sono p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 6px;
+    color: hsl(220, 60%, 30%);
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border: 4px solid hsl(220, 60%, 30%);
+    border-radius: 50%;
+    float: left;
+    margin: 0 24px 12px 0;
+}
+
+/*competenze*/
+
+#Competenze {
+    clear: both;
+}
+
+.skill-list li:nth-child(odd) {
+    background-color: #F5F7FB;
+}
+
+.skill-list li:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.skill-list li:first-child {
+    font-weight: bold;
+}
+
+/*progetti*/
+.project:nth-of-type(odd) {
+    background-color: #FAFAFA;
+}
+
+.project:nth-of-type(even) {
+    background-color: #FBF8EF;
+}
+
+.project:first-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: red;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-size: 0.75rem;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/*input e form*/
+label {
+    font-weight: bold;
+    color: #395389;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999999;
+    font-style: italic;
+}
+
+input,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60%;
+    width: 60%;
+    background-color: #F5F7FB;
+}
+
+#inputype {
+    width: auto;
+}
+
+#motivodelcontatto {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    background-color: #F5F7FB;
+    width: 60%;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #b1e5d8;
+    color: black;
+}
+
+/*button*/
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: #1F3D7A;
+    font-weight: bold;
+    width: 30%;
+}
+
+button:hover {
+    color: rgb(80, 243, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/*correlated-sites*/
+
+#correlated-sites ul {
+    list-style-type: none;
+}
+
+#correlated-sites li::before {
+    content: '🐈 '
+}
+
+/*footer*/
+#site-footer {
+    background-color: #395389;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+}
