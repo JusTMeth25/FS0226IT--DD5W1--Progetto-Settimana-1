@@ -11,13 +11,15 @@
 <body>
     <header id="site-header">
         <h1>Lorenzo Melis</h1>
-        <p class="tagline"><strong>Studente Full Stack</strong><ion-icon name="code-slash-outline"></ion-icon>in formazione su Epicode 2026</p>
+        <p class="tagline"><strong>Studente Full Stack</strong><ion-icon name="code-slash-outline"></ion-icon>in
+            formazione su Epicode 2026</p>
         <!--Menù di navigazione-->
         <nav id="menu-nav">
 
             <ul>
                 <li><a href="#Chi-sono"><ion-icon name="person-outline" class="icon"></ion-icon>Chi sono</a></li>
-                <li><a href="#Competenze"><ion-icon name="speedometer-outline" class="icon"></ion-icon>Competenze</a></li>
+                <li><a href="#Competenze"><ion-icon name="speedometer-outline" class="icon"></ion-icon>Competenze</a>
+                </li>
                 <li><a href="#Esperienze"><ion-icon name="briefcase-outline" class="icon"></ion-icon>Esperienze</a></li>
                 <li><a href="#Progetti"><ion-icon name="folder-open-outline" class="icon"></ion-icon>Progetti</a></li>
                 <li><a href="#Contatti"><ion-icon name="mail-outline" class="icon"></ion-icon>Contatti</a></li>
@@ -27,7 +29,7 @@
 
     <main>
         <section id="Chi-sono">
-            <h2><i class="bi bi-x-diamond-fill"></i> Chi sono</h2>
+            <h2>Chi sono</h2>
             <!--Blocco immagini-->
             <figure>
                 <img class="avatar" src="assets/img/fotomia.jpeg" alt="fotopersonale">
@@ -49,14 +51,75 @@
             <!--Lista di Competenze-->
             <h2>Competenze</h2>
             <p>
-                Le tecnologie che vedo durante le prime settimane di corso.
+                Le tecnologie su cui mi sento più sicuro al termine della prima settimana di corso. Le percentuali sono
+                autovalutazioni, non certificazioni.
             </p>
-            <ul class="skill-list">
+            <table id="skills">
+                <caption class="stack-tecnico">Stack tecnico - autovalutazione</caption>
+                <thead>
+                    <tr>
+                        <th class="titolo-tecnologia">Tecnologia</th>
+                        <th class="titolo-livello">Livello</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="tecnologia">
+                                <ion-icon name="logo-html5"></ion-icon> HTML5 semantico
+                            </div>
+                            <div class="descrizione">
+                                Tag strutturali, attributi, accessibilità di base, form con validazione
+                            </div>
+                        </td>
+                        <td>
+                            <div class="barra-livello">
+                                <div class="barrafull-html"></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="tecnologia">
+                                <ion-icon name="logo-css3"></ion-icon>
+                                CSS3
+                            </div>
+                            <div class="descrizione">
+                                Selettori, pseudo-classi, box model, float...
+                            </div>
+                        </td>
+                        <td>
+                            <div class="barra-livello">
+                                <div class="barrafull-css"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="tecnologia">
+                              <ion-icon name="logo-github"></ion-icon>  Git e Github
+                            </div>
+                            <div class="descrizione">
+                                Init, add, commit, push, repository remoti, pubblicazione su GitHub Pages
+                            </div>
+                        </td>
+                        <td>
+                            <div class="barra-livello">
+                                <div class="barrafull-git"></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+           <!-- <ul class="skill-list">
                 <li>HTML - struttura delle pagine</li>
                 <li>CSS - stile e impaginazione</li>
                 <li>Git e Github - versionamento del codice</li>
                 <li>Visual Studio Code - editor di lavoro</li>
             </ul>
+            -->
         </section>
         <section id="Esperienze">
             <!--Lista di Esperienze-->
@@ -164,9 +227,12 @@
         </section>
         <aside id="correlated-sites"> Contenuti correlati:
             <ul>
-                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat" class="correlated-sites-icon"></ion-icon>Contenuto 1</a></li>
-                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"class="correlated-sites-icon"></ion-icon>Contenuto 2</a></li>
-                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"class="correlated-sites-icon"></ion-icon>Contenuto 3</a></li>
+                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"
+                            class="correlated-sites-icon"></ion-icon>Contenuto 1</a></li>
+                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"
+                            class="correlated-sites-icon"></ion-icon>Contenuto 2</a></li>
+                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"
+                            class="correlated-sites-icon"></ion-icon>Contenuto 3</a></li>
             </ul>
         </aside>
 
@@ -174,23 +240,23 @@
     <br>
     <footer id="site-footer">
         <div class="icon-github">
-        <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
         </div>
-<div class="icon-linkedin">
-</ion-icon><ion-icon name="logo-linkedin"></ion-icon>
-</div>
-<div class="icon-email">
-      <ion-icon name="mail"></ion-icon>
-</div>
-<div class="icon-globe">
-<ion-icon name="globe-outline"></ion-icon>
-</div>
-    <br>
+        <div class="icon-linkedin">
+            </ion-icon><ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+        <div class="icon-email">
+            <ion-icon name="mail"></ion-icon>
+        </div>
+        <div class="icon-globe">
+            <ion-icon name="globe-outline"></ion-icon>
+        </div>
+        <br>
         &copy;2026 Lorenzo Melis - Costruito a mano durante la prima settimana del corso Epicode
     </footer>
-<!--Script ionicons-->
+    <!--Script ionicons-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 
