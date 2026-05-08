@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 /*header*/
 #site-header {
     background-color: hsl(220, 40%, 20%);
@@ -54,14 +62,22 @@
 	margin: 0 4px;
 	border-radius: 4px;
 	line-height: 1.6;
+    border: 1px solid aquamarine;
+    background-color: rgba(127, 255, 212, 0.61);
+    text-decoration: none;
 }
 
 #site-header nav a:hover {
-    color: aquamarine;
+    color: blue;
     background-color: rgba(255, 252, 252, 0.642);
-    border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+text-align: center;
+width: 20px;
+padding-right: 2px;
 }
 
 /*body*/
@@ -92,6 +108,7 @@ main {
     max-width: 920px;
     margin: 0 auto;
     padding: 40px 20px;
+    margin-top: -13px;
 }
 
 main section {
@@ -104,9 +121,10 @@ main section {
 }
 
 main section h2::before {
-    content: '— ';
-    color: #316A6B;
+    <i class="bi bi-x-diamond-fill"></i>;
 }
+
+
 
 /*table esperienze*/
 table {
@@ -292,4 +310,15 @@ button:hover {
     padding-top: 51px;
     padding-bottom: 51px;
     margin-bottom: 300px;
+}
+
+.icon-github, .icon-linkedin, .icon-email, .icon-globe {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.icon-github, .icon-linkedin, .icon-email, .icon-globe:hover {
+    cursor: pointer;
 }
