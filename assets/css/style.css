@@ -229,8 +229,10 @@ td {
   text-align: left;
 }
 
-.anno, .ruolo, .azienda {
-    padding-left: 16px;
+.anno,
+.ruolo,
+.azienda {
+  padding-left: 16px;
 }
 
 /*esperienze*/
@@ -336,11 +338,17 @@ img {
   margin-right: 10px;
 }
 .project:nth-of-type(odd) {
+  border-left: 5px solid #1F3D7A;
   background-color: #fafafa;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .project:nth-of-type(even) {
   background-color: #fbf8ef;
+  border-left: 5px solid #F2B90D;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .project:first-of-type h3::after {
