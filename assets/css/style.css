@@ -229,6 +229,17 @@ td {
   text-align: left;
 }
 
+.anno, .ruolo, .azienda {
+    padding-left: 16px;
+}
+
+/*esperienze*/
+
+#Esperienze h2::before {
+  content: url(../img/x-diamond-fill.svg);
+  margin-right: 10px;
+}
+
 /* Titoli del main */
 
 h2,
@@ -292,8 +303,8 @@ img {
 }
 
 #Chi-sono h2::before {
-    content: url(../img/x-diamond-fill.svg);
-    margin-right: 10px;
+  content: url(../img/x-diamond-fill.svg);
+  margin-right: 10px;
 }
 
 /*competenze*/
@@ -303,8 +314,8 @@ img {
 }
 
 #Competenze h2::before {
-    content: url(../img/x-diamond-fill.svg);
-    margin-right: 10px;
+  content: url(../img/x-diamond-fill.svg);
+  margin-right: 10px;
 }
 .skill-list li:nth-child(odd) {
   background-color: #f5f7fb;
@@ -318,19 +329,11 @@ img {
   font-weight: bold;
 }
 
-
-/*esperienze*/
-
-#Esperienze h2::before {
-    content: url(../img/x-diamond-fill.svg);
-    margin-right: 10px;
-}
-
 /*progetti*/
 
 #Progetti h2::before {
-    content: url(../img/x-diamond-fill.svg);
-    margin-right: 10px;
+  content: url(../img/x-diamond-fill.svg);
+  margin-right: 10px;
 }
 .project:nth-of-type(odd) {
   background-color: #fafafa;
@@ -361,8 +364,8 @@ img {
 
 /*input e form*/
 #Contatti h2::before {
-    content: url(../img/x-diamond-fill.svg);
-    margin-right: 10px;
+  content: url(../img/x-diamond-fill.svg);
+  margin-right: 10px;
 }
 label {
   font-weight: bold;
