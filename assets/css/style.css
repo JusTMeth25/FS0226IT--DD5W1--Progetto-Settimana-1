@@ -124,16 +124,25 @@ main section h2::before {
 
 /*Tabella competenze con livelli*/
 
+#Competenze h2 {
+  margin-bottom: 0px;
+}
+
+#Competenze p {
+  margin-bottom: 20px;
+}
 #skills {
   width: 100%;
 }
 
-caption {
+.stack-tecnico {
+  text-align: left;
+  margin-bottom: 5px;
+  color: rgb(29, 109, 112);
   font-style: italic;
-  padding-right: 100px;
 }
 
-table caption,
+#skills table caption,
 table th,
 table td,
 table tbody {
@@ -200,25 +209,23 @@ td {
 }
 
 /*table esperienze*/
-table {
+#Esperienze table {
   width: 100%;
   border-collapse: collapse;
   border: none;
 }
 
-table tr {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+.esperienze-formative-lavorative {
+  text-align: left;
+  margin-bottom: 5px;
+  font-style: italic;
+  color: rgb(29, 109, 112);
 }
 
-th,
-td,
-caption {
-  border: 1px solid black;
+#Esperienze table tr {
+  border-bottom: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }
 
 /* Titoli del main */
@@ -270,8 +277,8 @@ img {
 }
 
 #Chi-sono p {
-    font-size: 1.15rem;
-    margin-left: 180px;
+  font-size: 1.15rem;
+  margin-left: 180px;
 }
 
 .avatar {
