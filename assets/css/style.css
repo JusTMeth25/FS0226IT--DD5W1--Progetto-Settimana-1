@@ -17,35 +17,75 @@
     line-height: 2.4;
     padding: 60px 20px 40px;
     border-bottom: 4px solid #316A6B;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #site-header h1 {
     font-size: 3rem;
     font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tagline {
+    color: hsl(220, 60%, 30%);
     font-style: italic;
 }
 
+/*nav*/
 #site-header nav {
-    display: inline-block;
     padding: 8px 16px;
     margin: 0 4px;
     border-radius: 4px;
 }
 
+#site-header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#site-header nav li {
+    display: inline-block;
+}
+
+#site-header nav a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px 16px;
+	margin: 0 4px;
+	border-radius: 4px;
+	line-height: 1.6;
+}
+
+#site-header nav a:hover {
+    color: aquamarine;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+nav li:hover {
+    background-color: rgba(255, 252, 252, 0.642);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 /*body*/
+
 body {
     margin: 0;
+}
+
+body {
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.7;
-    color: #344F86;
+    color: #2b2b2b;
     background-color: #fafafa;
 }
 
 /*main e main section*/
 main {
     max-width: 920px;
-    margin: 0;
+    margin: 0 auto;
     padding: 40px 20px;
 }
 
@@ -73,43 +113,6 @@ caption {
     border: 1px solid black;
 
 }
-
-
-.tagline {
-    color: hsl(220, 60%, 30%);
-    font-style: italic;
-}
-
-/*menu nav*/
-nav a {
-    display: inline-block;
-    color: #FFFFFF;
-    font-weight: bold;
-    line-height: 3;
-}
-
-nav a:hover {
-    color: aquamarine;
-    background-color: rgba(red, green, blue, alpha);
-}
-
-nav ul {
-    padding-inline-start: 0;
-}
-
-nav li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 20px;
-}
-
-nav li:hover {
-    background-color: rgba(255, 252, 252, 0.642);
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
 
 /* Titoli del main */
 h2 {
@@ -257,6 +260,14 @@ button:hover {
 }
 
 /*correlated-sites*/
+
+#correlated-sites {
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
 
 #correlated-sites ul {
     list-style-type: none;
