@@ -201,13 +201,18 @@ td {
 
 /*table esperienze*/
 table {
-  border-collapse: collapse;
-}
-
-table td,
-table tbody {
+  width: 100%;
   border-collapse: collapse;
   border: none;
+}
+
+table tr {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 th,
@@ -246,12 +251,13 @@ img {
 #Chi-sono {
   background-color: #ffffff;
   text-align: justify;
+  color: black;
 }
 
 #Chi-sono p:first-of-type {
   font-size: 1.15rem;
   font-style: serif;
-  color: #7b8393;
+  color: black;
 }
 
 #Chi-sono p:first-of-type::first-letter {
@@ -259,7 +265,13 @@ img {
   font-weight: bold;
   float: left;
   margin-right: 6px;
+  margin-bottom: 40px;
   color: hsl(220, 60%, 30%);
+}
+
+#Chi-sono p {
+    font-size: 1.15rem;
+    margin-left: 180px;
 }
 
 .avatar {
@@ -311,6 +323,10 @@ img {
 
 .project:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.icon-github-progetti {
+  padding-right: 2px;
 }
 
 /*input e form*/
