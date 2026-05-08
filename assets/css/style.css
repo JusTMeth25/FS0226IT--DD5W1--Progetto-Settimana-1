@@ -58,10 +58,6 @@
 
 #site-header nav a:hover {
     color: aquamarine;
-    background-color: rgba(red, green, blue, alpha);
-}
-
-nav li:hover {
     background-color: rgba(255, 252, 252, 0.642);
     border: none;
     border-radius: 4px;
@@ -82,6 +78,15 @@ body {
     background-color: #fafafa;
 }
 
+/*#Chi-sono, #Competenze, #Esperienze, #Progetti, #Contatti, #correlated-sites {
+    margin: 8em;
+    margin-top: -5em;
+    margin-bottom: 8em;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 7px;
+}*/
+
 /*main e main section*/
 main {
     max-width: 920px;
@@ -90,8 +95,9 @@ main {
 }
 
 main section {
-    padding: 32px;
-    margin-bottom: 24px;
+    padding: 20px;
+    margin-top: -5em;
+    margin-bottom: 8em;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -262,8 +268,8 @@ button:hover {
 /*correlated-sites*/
 
 #correlated-sites {
-    padding: 32px;
-    margin-bottom: 24px;
+    margin-top: -5em;
+    padding: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -283,4 +289,7 @@ button:hover {
     color: #ffffff;
     text-align: center;
     font-size: 0.9rem;
+    padding-top: 51px;
+    padding-bottom: 51px;
+    margin-bottom: 300px;
 }
