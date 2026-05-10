@@ -484,9 +484,10 @@ button:hover {
   background-color: #2b2b2b7b;
 }
 
-.icon-github,
-.icon-linkedin,
-.icon-email,
+.icon-github:hover,
+.icon-linkedin:hover,
+.icon-email:hover,
 .icon-globe:hover {
   cursor: pointer;
+  background-color: #f2b90d;
 }
