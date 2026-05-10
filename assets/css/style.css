@@ -9,14 +9,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-.material-symbols-outlined {
-  font-variation-settings:
-    "FILL" 0,
-    "wght" 400,
-    "GRAD" 0,
-    "opsz" 24;
-}
-
 /*header*/
 #site-header {
   background-color: hsl(220, 40%, 20%);
@@ -32,7 +24,7 @@
 
 #site-header h1 {
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 600;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 0;
   font-family: "Playfair Display", serif;
@@ -77,6 +69,7 @@
 #site-header nav a:hover {
   color: blue;
   background-color: gold;
+  border-color: gold;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -111,6 +104,7 @@ main {
 }
 
 main section {
+  background-color: #ffffff;
   padding: 20px;
   margin-top: -5em;
   margin-bottom: 8em;
@@ -119,89 +113,74 @@ main section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-/*Tabella competenze con livelli*/
+/* Tabelle */
 
-#skills tr {
-    border-bottom: 1px solid #999;
-}
-
-#Competenze h2 {
-  margin-bottom: 0px;
-}
-
-#Competenze p {
-  margin-bottom: 20px;
-}
-#skills {
+table {
   width: 100%;
   border-collapse: collapse;
-  border: none;
+  margin-top: 10px;
 }
 
-.stack-tecnico {
+table caption {
   text-align: left;
-  margin-bottom: 5px;
-  color: rgb(29, 109, 112);
   font-style: italic;
+  color: hsl(220, 30%, 40%);
+  padding: 8xp 0;
 }
 
-.titolo-tecnologia {
-  padding-left: 16px;
-}
-
-.titolo-livello {
-  padding-right: 200px;
-}
-
-th {
+table th,
+table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #ece6d8;
   text-align: left;
-  background: #f5f5e8;
-}
-
-td {
-  padding: 20px 15px;
   vertical-align: middle;
 }
 
-.tecnologia {
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 8px;
+table th {
+  background-color: #f9f5ea;
+  color: hsl(220, 60%, 25%);
+  font-weight: 600;
 }
 
-.descrizione {
-  color: #666;
+/*Tabella competenze con livelli*/
+.skills td:first-child {
+  width: 45%;
+}
+
+.skills td:first-child i {
+  color: hsl(220, 60%, 30%);
+  width: 10%;
+  text-align: center;
+}
+
+.skills .descrizione {
+  display: block;
+  font-size: 0.85rem;
+  color: #6f6856;
+  margin-top: 2px;
   font-style: italic;
-  line-height: 1.5;
+}
+
+.skills td {
+  vertical-align: top;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .barra-livello {
-  width: 80%;
-  height: 14px;
-  background: #ece9df;
-  border-radius: 20px;
+  background-color: #ece6d8;
+  border-radius: 6px;
+  height: 12px;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.barrafull-html {
-  width: 150px;
-  height: 90%;
-  background: rgb(80, 243, 255);
-  border-radius: 20px;
+.barrafill {
+  background-color: hsl(45, 90%, 50%);
+  height: 100%;
+  border-radius: 6px;
 }
 
-.barrafull-css {
-  width: 120px;
-  height: 90%;
-  background: rgb(80, 243, 255);
-  border-radius: 20px;
-}
-
-.barrafull-git {
-  width: 100px;
-  height: 90%;
-  background: rgb(80, 243, 255);
-  border-radius: 20px;
-}
 
 /*table esperienze*/
 #Esperienze table {
@@ -287,15 +266,17 @@ img {
 #Chi-sono p {
   font-size: 1.15rem;
   margin-left: 180px;
+  text-align: justify;
 }
 
 .avatar {
-  width: 110px;
-  height: 110px;
-  border: 4px solid hsl(220, 60%, 30%);
+  width: 130px;
+  height: 130px;
+  border: 5px solid hsl(220, 60%, 30%);
   border-radius: 50%;
   float: left;
-  margin: 0 24px 12px 0;
+  margin: 0 28px 12px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 #Chi-sono h2::before {
@@ -369,6 +350,27 @@ a {
   padding-right: 2px;
 }
 
+.more-projects {
+  text-align: right;
+  margin: 20px 0 0;
+}
+
+.more-projects a {
+  color: hsl(220, 60%, 30%);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid hsl(45, 90%, 50%);
+  padding-bottom: 2px;
+}
+
+.more-projects a:hover {
+  color: hsl(220, 60%, 45%);
+}
+
+.more-projects a i {
+  margin-right: 6px;
+}
+
 /*input e form*/
 #Contatti h2::before {
   content: url(../img/x-diamond-fill.svg);
@@ -395,6 +397,7 @@ textarea {
 
 #inputype {
   width: auto;
+  cursor: pointer;
 }
 
 #motivodelcontatto {
@@ -420,6 +423,7 @@ button {
   background-color: #1f3d7a;
   font-weight: bold;
   width: 13%;
+  cursor: pointer;
 }
 
 button:hover {
@@ -428,7 +432,7 @@ button:hover {
 }
 
 .submit-icon {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 /*correlated-sites*/
@@ -448,10 +452,6 @@ button:hover {
 .correlated-sites-icon {
   padding-right: 5px;
   color: blue;
-}
-
-/*#correlated-sites li::before {
-    content: '🐈 '
 }
 
 /*footer*/
@@ -482,12 +482,13 @@ button:hover {
   border: 2px solid gray;
   border-radius: 100%;
   background-color: #2b2b2b7b;
+  cursor: pointer;
 }
 
 .icon-github:hover,
 .icon-linkedin:hover,
 .icon-email:hover,
 .icon-globe:hover {
-  cursor: pointer;
+  color: black;
   background-color: #f2b90d;
 }
