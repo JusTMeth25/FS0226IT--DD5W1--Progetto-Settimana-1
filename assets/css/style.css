@@ -40,7 +40,7 @@
 /*nav*/
 #site-header nav {
   padding: 8px 16px;
-  margin: 0 4px;
+  margin-bottom: 45px;
   border-radius: 4px;
 }
 
@@ -51,6 +51,7 @@
 
 #site-header nav li {
   display: inline-block;
+  text-align: center;
 }
 
 #site-header nav a {
@@ -99,13 +100,13 @@ body {
 main {
   max-width: 920px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 16px 20px;
   margin-top: -13px;
 }
 
 main section {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 16px;
   margin-top: -5em;
   margin-bottom: 8em;
   border: 1px solid #e0e0e0;
@@ -265,7 +266,6 @@ img {
 
 #Chi-sono p {
   font-size: 1.15rem;
-  margin-left: 180px;
   text-align: justify;
 }
 
@@ -274,8 +274,8 @@ img {
   height: 130px;
   border: 5px solid hsl(220, 60%, 30%);
   border-radius: 50%;
-  float: left;
-  margin: 0 28px 12px 0;
+  display: block;
+  margin: 0 auto 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -376,6 +376,11 @@ a {
   content: url(../img/x-diamond-fill.svg);
   margin-right: 10px;
 }
+
+form {
+  width: 100%;
+}
+
 label {
   font-weight: bold;
   color: #395389;
@@ -393,6 +398,13 @@ textarea {
   font-size: 80%;
   width: 90%;
   background-color: #f5f7fb;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: 16px;
 }
 
 #inputype {
@@ -413,6 +425,27 @@ textarea:focus {
   color: black;
 }
 
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/*table*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+table tr {
+  border-bottom: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+
+table td {
+  padding-left: 16px;
+}
+
 /*button*/
 button {
   padding: 14px 14px;
@@ -422,7 +455,7 @@ button {
   color: white;
   background-color: #1f3d7a;
   font-weight: bold;
-  width: 13%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -460,7 +493,7 @@ button:hover {
   color: #ffffff;
   text-align: center;
   font-size: 0.9rem;
-  padding-top: 51px;
+  padding-top: 41px;
   padding-bottom: 10px;
 }
 
@@ -491,4 +524,40 @@ button:hover {
 .icon-globe:hover {
   color: black;
   background-color: #f2b90d;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 60px 20px 40px;
+  }
+  main {
+    padding: 40px 20px;
+  }
+  section {
+    padding: 32px;
+  }
+  .avatar {
+    float: left;
+  }
+  input,
+  textarea {
+    width: 60%;
+  }
+  #motivodelcontatto {
+    width: 60%;
+  }
+  button {
+    width: 30%;
+  }
+  #site-footer {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1, h2 {
+    font-size: ;
+  }
+  
 }
