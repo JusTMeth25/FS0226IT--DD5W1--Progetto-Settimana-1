@@ -34,7 +34,7 @@
   color: hsl(241, 100%, 54%);
   font-style: italic;
   margin-top: 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /*nav*/
@@ -59,7 +59,7 @@
   color: #ffffff;
   font-weight: bold;
   padding: 8px 16px;
-  margin: 0 4px;
+  margin: 5px 4px;
   border-radius: 4px;
   line-height: 1.6;
   border: 1px solid aquamarine;
@@ -250,7 +250,7 @@ img {
 
 #Chi-sono p:first-of-type {
   font-size: 1.15rem;
-  font-style: serif;
+  font-style: italic;
   color: black;
 }
 
@@ -395,7 +395,7 @@ input,
 textarea {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80%;
-  width: 90%;
+  width: 100%;
   background-color: #f5f7fb;
 }
 
@@ -415,7 +415,7 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   width: 90%;
   background-color: #f5f7fb;
-  width: 90%;
+  width: 100%;
 }
 
 input:focus,
@@ -471,6 +471,7 @@ button:hover {
 
 #correlated-sites {
   margin-top: -5em;
+  margin-bottom: -5px;
   padding: 20px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -493,7 +494,7 @@ button:hover {
   text-align: center;
   font-size: 0.9rem;
   padding-top: 41px;
-  padding-bottom: 10px;
+  padding-bottom: 41px;
 }
 
 .icon-github,
@@ -537,6 +538,7 @@ button:hover {
   }
   .avatar {
     float: left;
+    margin: 0 14px 16px;
   }
   input,
   textarea {
