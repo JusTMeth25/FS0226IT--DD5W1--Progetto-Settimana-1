@@ -68,7 +68,7 @@
 }
 
 #site-header nav a:hover {
-  color: blue;
+  color: #66b3ff;
   background-color: gold;
   border-color: gold;
   border-radius: 4px;
