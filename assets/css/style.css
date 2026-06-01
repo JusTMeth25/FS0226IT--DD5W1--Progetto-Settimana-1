@@ -18,12 +18,12 @@
   color: #ffffff;
   text-align: center;
   line-height: 2.4;
-  padding: 60px 20px 40px;
+  padding: 30px 16px 20px;
   border-bottom: 4px solid #316a6b;
 }
 
 #site-header h1 {
-  font-size: 4rem;
+  font-size: clamp(4rem; 6vw; 8rem);
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 0;
@@ -181,7 +181,6 @@ table th {
   border-radius: 6px;
 }
 
-
 /*table esperienze*/
 #Esperienze table {
   width: 100%;
@@ -236,9 +235,10 @@ h3 {
   line-height: 2.2;
 }
 
+/*images*/
 img {
-  width: 200px;
-  height: 200px;
+  max-width: 100%;
+  height: auto;
 }
 
 /*chi-sono*/
