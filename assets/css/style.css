@@ -530,6 +530,20 @@ button:hover {
   header {
     padding: 60px 20px 40px;
   }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+  }
+  #Chi-sono p:first-of-type::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  margin-top: -30px;
+  margin-right: 6px;
+  margin-bottom: 40px;
+  color: hsl(220, 60%, 30%);
+}
   main {
     padding: 40px 20px;
   }
@@ -542,10 +556,10 @@ button:hover {
   }
   input,
   textarea {
-    width: 60%;
+    width: 100%;
   }
   #motivodelcontatto {
-    width: 60%;
+    width: 100%;
   }
   button {
     width: 30%;
