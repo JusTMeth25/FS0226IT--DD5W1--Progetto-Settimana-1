@@ -527,23 +527,27 @@ button:hover {
 }
 
 @media (min-width: 768px) {
-  header {
+  #site-header {
     padding: 60px 20px 40px;
+    line-height: 2.4;
   }
   nav {
     display: flex;
     justify-content: space-evenly;
     padding: 0 20px;
   }
+  html {
+    scroll-padding-top: 50vh;
+  }
   #Chi-sono p:first-of-type::first-letter {
-  font-size: 3rem;
-  font-weight: bold;
-  float: left;
-  margin-top: -30px;
-  margin-right: 6px;
-  margin-bottom: 40px;
-  color: hsl(220, 60%, 30%);
-}
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-top: -30px;
+    margin-right: 6px;
+    margin-bottom: 40px;
+    color: hsl(220, 60%, 30%);
+  }
   main {
     padding: 40px 20px;
   }
