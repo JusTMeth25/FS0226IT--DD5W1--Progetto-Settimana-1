@@ -6,60 +6,61 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 /*header*/
 #site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: hsl(220, 40%, 20%);
   background-image: url(../img/pexels-davide-robetti-1119720888-29773799.jpg);
   background-size: cover;
   background-position: center;
   color: #ffffff;
   text-align: center;
-  line-height: 2.4;
+  line-height: 1.8;
   padding: 30px 16px 20px;
   border-bottom: 4px solid #316a6b;
 }
 
 #site-header h1 {
-  font-size: clamp(4rem, 6vw, 8rem);
-  font-weight: 600;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  font-weight: bold;
+  font-style: italic;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 0;
+  margin: 8px 0;
   font-family: "Playfair Display", serif;
 }
 
 .tagline {
   color: hsl(241, 100%, 54%);
   font-style: italic;
-  margin-top: 0;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 /*nav*/
-#site-header nav {
-  padding: 8px 16px;
-  margin-bottom: 45px;
-  border-radius: 4px;
-}
 
 #site-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-#site-header nav li {
-  display: inline-block;
-  text-align: center;
+  margin: 12px 0 0;
 }
 
 #site-header nav a {
   display: inline-block;
   color: #ffffff;
   font-weight: bold;
-  padding: 8px 16px;
-  margin: 5px 4px;
+  padding: 8px 14px;
+  margin: 2px;
   border-radius: 4px;
   line-height: 1.6;
   border: 1px solid aquamarine;
@@ -85,10 +86,6 @@
 /*body*/
 
 body {
-  margin: 0;
-}
-
-body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.7;
@@ -100,15 +97,13 @@ body {
 main {
   max-width: 920px;
   margin: 0 auto;
-  padding: 16px 20px;
-  margin-top: -13px;
+  padding: 16px;
 }
 
 main section {
   background-color: #ffffff;
   padding: 16px;
-  margin-top: -5em;
-  margin-bottom: 8em;
+  margin-bottom: 16px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -144,42 +139,23 @@ table th {
 }
 
 /*Tabella competenze con livelli*/
-.skills td:first-child {
-  width: 45%;
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
 }
 
-.skills td:first-child i {
-  color: hsl(220, 60%, 30%);
-  width: 10%;
-  text-align: center;
+.skills li {
+  background-color: hsl(220, 60%, 30%);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
 }
 
-.skills .descrizione {
-  display: block;
-  font-size: 0.85rem;
-  color: #6f6856;
-  margin-top: 2px;
-  font-style: italic;
-}
-
-.skills td {
-  vertical-align: top;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.barra-livello {
-  background-color: #ece6d8;
-  border-radius: 6px;
-  height: 12px;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.barrafill {
-  background-color: hsl(45, 90%, 50%);
-  height: 100%;
-  border-radius: 6px;
+.skills li:first-child { 
+  background-color: #F2B90E;
 }
 
 /*table esperienze*/
@@ -225,26 +201,26 @@ h3 {
 h2 {
   color: hsl(220, 60%, 30%);
   text-align: left;
-  line-height: 2.4;
+  line-height: 1.4;
+  margin-top: 0;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.15em;
   color: hsl(220, 30%, 25%);
   text-align: left;
-  line-height: 2.2;
+  line-height: 1.6;
 }
 
 /*images*/
 img {
-  max-width: 100%;
   height: auto;
 }
 
 /*chi-sono*/
 #Chi-sono {
   background-color: #ffffff;
-  text-align: justify;
+  text-align: left;
   color: black;
 }
 
@@ -269,12 +245,12 @@ img {
 }
 
 .avatar {
-  width: 130px;
-  height: 130px;
-  border: 5px solid hsl(220, 60%, 30%);
+  width: 110px;
+  height: 110px;
+  border: 4px solid hsl(220, 60%, 30%);
   border-radius: 50%;
   display: block;
-  margin: 0 auto 16px;
+  margin: 0 auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -283,12 +259,14 @@ img {
   margin-right: 10px;
 }
 
-/*competenze*/
-
-#Competenze {
-  clear: both;
+/*Bio*/
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
+/*competenze*/
 #Competenze h2::before {
   content: url(../img/x-diamond-fill.svg);
   margin-right: 10px;
@@ -311,6 +289,20 @@ img {
   content: url(../img/x-diamond-fill.svg);
   margin-right: 10px;
 }
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.project {
+  display: flex;
+  flex: 1 1 260px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
 .project:nth-of-type(odd) {
   border-left: 5px solid #1f3d7a;
   background-color: #fafafa;
@@ -325,14 +317,17 @@ img {
   border-bottom-left-radius: 5px;
 }
 
-.project:first-of-type h3::after {
+.project:first-of-type::after {
   content: "NEW";
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 2px 8px;
   margin-left: 12px;
   background-color: red;
   color: #ffffff;
-  border-radius: 3px;
+  border-radius: 0 4px 0 4px;
+  vertical-align: middle;
   font-size: 0.75rem;
 }
 
@@ -470,8 +465,6 @@ button:hover {
 /*correlated-sites*/
 
 #correlated-sites {
-  margin-top: -5em;
-  margin-bottom: -5px;
   padding: 20px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -485,6 +478,25 @@ button:hover {
 .correlated-sites-icon {
   padding-right: 5px;
   color: blue;
+}
+
+/*Back to top*/
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: hsl(220, 60%, 30%);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 50;
 }
 
 /*footer*/
@@ -527,6 +539,12 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+  main {
+    padding: 40px 20px;
+  }
+  main section {
+    padding: 32px;
+  }
   #site-header {
     padding: 60px 20px 40px;
     line-height: 2.4;
@@ -539,6 +557,12 @@ button:hover {
   html {
     scroll-padding-top: 50vh;
   }
+  #chi-sono {
+    text-align: justify;
+  }
+  #Chi-sono p:first-of-type::first-letter {
+    font-size: 1.15rem;
+  }
   #Chi-sono p:first-of-type::first-letter {
     font-size: 3rem;
     font-weight: bold;
@@ -548,6 +572,12 @@ button:hover {
     margin-bottom: 40px;
     color: hsl(220, 60%, 30%);
   }
+
+  .bio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
   main {
     padding: 40px 20px;
   }
@@ -555,22 +585,27 @@ button:hover {
     padding: 32px;
   }
   .avatar {
-    float: left;
-    margin: 0 14px 16px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+  #competenze {
+    clear: both;
   }
   input,
-  textarea {
+  textarea,
+  select {
     width: 100%;
   }
   #motivodelcontatto {
     width: 100%;
   }
   button {
-    width: 30%;
+    width: auto;
+    min-width: 30%;
   }
   #site-footer {
-    padding-top: 60px;
-    padding-bottom: 45px;
+    line-height: 2.4;
+    padding: 30px 20px;
   }
 }
 
@@ -581,4 +616,86 @@ button:hover {
   h2 {
     font-size: clamp(1.3rem, 4vw, 1.8rem);
   }
+}
+
+/*Overlay + Modal*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.overlay[hidden] {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: auto;
+  padding: 8px 50px;
+  z-index:1;
+  cursor: pointer;
+}
+
+#consenso {
+  width: auto;
+}
+
+#motivo,
+#data,
+#consenso {
+  cursor: pointer;
+}
+
+.btn-submit {
+  cursor: pointer;
+}
+
+/*Modale form salvata*/
+.conferma {
+  background-color: #e8f5e9;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.conferma h3 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+.conferma ul {
+  list-style: none;
+  padding: 0;
+}
+.conferma li {
+  padding: 4px 0;
+  border-bottom: 1px solid #c8e6c9;
+}
+.conferma li:last-child {
+  border-bottom: none;
+}
+
+#chiudi-conferma {
+  cursor: pointer;
 }

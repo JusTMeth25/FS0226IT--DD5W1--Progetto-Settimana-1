@@ -33,104 +33,42 @@
         <section id="Chi-sono">
             <h2>Chi sono</h2>
             <!--Blocco immagini-->
-            <figure>
-                <img class="avatar" src="assets/img/fotomia.jpeg" alt="fotopersonale">
-            </figure>
-            <p>
-                Mi chiamo Lorenzo Melis e sto imparando a programmare. Studio sviluppo web con <strong>Epicode</strong>
-                e
-                ogni giorno aggiungo qualcosa di nuovo a questa pagina. Mi piace lavorare in gruppo, mi piace
-                sperimentare e
-                creare cose nuove. Inoltre, mi interessano gli sport, videogames e musica. </p>
-            <p>
-                Vivo a Roma. Sono laureato in <em>Ingegneria Informatica.</em> Ho una formazione lavorativa precedente
-                in
-                ambito <em>cybersecurity</em> e consulenza lato governance e adempimenti normativi. Cerco un primo ruolo
-                come sviluppatore frontend.
-            </p>
+            <div class="bio">
+                <figure>
+                    <img class="avatar" src="assets/img/fotomia.jpeg" alt="fotopersonale">
+                </figure>
+                <div class="text">
+                    <p>
+                        Mi chiamo Lorenzo Melis e sto imparando a programmare. Studio sviluppo web con
+                        <strong>Epicode</strong>
+                        e
+                        ogni giorno aggiungo qualcosa di nuovo a questa pagina. Mi piace lavorare in gruppo, mi piace
+                        sperimentare e
+                        creare cose nuove. Inoltre, mi interessano gli sport, videogames e musica.
+                    </p>
+                    <p>
+                        Vivo a Roma. Sono laureato in <em>Ingegneria Informatica.</em> Ho una formazione lavorativa
+                        precedente
+                        in
+                        ambito <em>cybersecurity</em> e consulenza lato governance e adempimenti normativi. Cerco un
+                        primo ruolo
+                        come sviluppatore frontend.
+                    </p>
+                </div>
+            </div>
         </section>
         <section id="Competenze">
             <!--Lista di Competenze-->
             <h2>Competenze</h2>
             <p>
-                Le tecnologie su cui mi sento più sicuro al termine della prima settimana di corso. Le percentuali sono
-                autovalutazioni, non certificazioni.
+                Le tecnologie studiate e imparate durante il corso.
             </p>
-            <table class="skills">
-                <caption>Stack tecnico - autovalutazione</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Tecnologia</th>
-                        <th scope="col">Livello</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <i class="fa-brands fa-html5"></i> <strong>HTML5 semantico</strong>
-                            <span class="descrizione">
-                                Tag strutturali, attributi, accessibilità di base, form con validazione
-                            </span>
-                        </td>
-                        <td>
-                            <div class="barra-livello">
-                                <div class="barrafill" style="width: 80%;"></div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <i class="fa-brands fa-css3-alt"></i> <strong>CSS3</strong>
-                            <span class="descrizione">
-                                Selettori, pseudo-classi, box model, float, pseudo-elementi, Google Fonts
-                            </span>
-                        </td>
-                        <td>
-                            <div class="barra-livello">
-                                <div class="barrafill" style="width: 70%;"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa-brands fa-git-alt"></i> <strong>Git e GitHub</strong>
-                            <span class="descrizione">
-                                Init, add, commit, push, repository remoti, pubblicazione su GitHub Pages
-                            </span>
-                        </td>
-                        <td>
-                            <div class="barra-livello">
-                                <div class="barrafill" style="width: 55%;"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa-solid fa-terminal"></i> <strong>Linea di comando</strong>
-                            <span class="descrizione">Navigazione tra cartelle, gestione file, comandi base di shell su
-                                macOS e Linux</span>
-                        </td>
-                        <td>
-                            <div class="barra-livello">
-                                <div class="barrafill" style="width: 45%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa-brands fa-markdown"></i> <strong>Markdown e documentazione</strong>
-                            <span class="descrizione">README, documentazione tecnica, scrittura chiara per altri
-                                sviluppatori</span>
-                        </td>
-                        <td>
-                            <div class="barra-livello">
-                                <div class="barrafill" style="width: 75%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul class="skills">
+                <li> <i class="fa-brands fa-html5"></i> <strong>HTML5 semantico</strong></li>
+                <li> <i class="fa-brands fa-css3-alt"></i> <strong>CSS3</strong></li>
+                <li> <i class="fa-brands fa-git-alt"></i> <strong>Git e GitHub</strong></li>
+                <li> <i class="fa-brands fa-markdown"></i> <strong>Markdown e documentazione</strong></li>
+            </ul>
         </section>
         <section id="Esperienze">
             <!--Lista di Esperienze-->
@@ -172,6 +110,7 @@
             <!--Lista di Progetti-->
             <h2>Progetti</h2>
             <p>I lavori fatti durante le prime settimane di corso.</p>
+            <div class="projects-grid">
             <article class="project">
                 <h3>Pagina Web Music Streaming</h3>
                 <p>
@@ -204,60 +143,68 @@
                 <a href="javascript:void();"><ion-icon name="logo-github" class="icon-github-progetti"></ion-icon>Vedi
                     su Github</a>
             </article>
+            </div>
             <p class="more-projects">
                 <a href="progetti.html"><i class="fa-solid fa-arrow-right"></i> Tutti i
                     progetti in dettaglio</a>
             </p>
         </section>
         <section id="Contatti">
-            <!--Lista di Contatti-->
             <h2>Contattami</h2>
-            <p>
-                Sono presente sulle seguenti piattaforme professionali, dove puoi vedere i miei progetti, le mie
-                esperienze e contattarmi. Altrimenti puoi compilare direttamente il seguente form per metterti in
-                contatto con me. Ti rispondo entro 24 ore.
-            </p>
-            <a href="https://www.linkedin.com/in/lorenzo-melis97/" target="_blank" title="linkedinprofilepage">Profilo
-                LinkedIn</a> <br>
-            <a href="https://github.com/JusTMeth25" target="_blank" title="githubprofilepage">Profilo Github</a>
-            <!--Form di compilazione-->
-            <form action="#" method="POST"><br>
-                <label for="name">Nome</label><br>
-                <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
-                <br><br>
-                <label for="motivodelcontatto">Motivo del contatto</label><br>
-                <select id="motivodelcontatto" name="motivodelcontatto" required>
-                    <option value="" selected>""</option>
-                    <option value="offer">Offerta lavorativa</option>
-                    <option value="collab">Richiesta di collaborazione</option>
-                    <option value="info">Richiesta di informazioni</option>
-                    <option value="other">Altri motivi</option>
-                </select>
-                <br><br>
-                <label for="date">Data preferita per la risposta</label><br>
-                <input type="date" id="date" name="date" required><br><br>
-                <label for="message">Messaggio</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br>
-                <input type="checkbox" id="inputype" name="inputype" value="Accetto" required>
-                <label for="inputype">Accetto di essere ricontattato all'indirizzo indicato</label><br>
-                <button type="submit"><ion-icon name="paper-plane" class="submit-icon"></ion-icon>Invia</button>
-            </form>
+            <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
+            <button type="button" id="apri-contatti">Scrivimi</button>
         </section>
-        <aside id="correlated-sites"> Contenuti correlati:
-            <ul>
-                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"
-                            class="correlated-sites-icon"></ion-icon>Contenuto 1</a></li>
-                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"
-                            class="correlated-sites-icon"></ion-icon>Contenuto 2</a></li>
-                <li><a href="javascript:void(0);"><ion-icon name="logo-octocat"
-                            class="correlated-sites-icon"></ion-icon>Contenuto 3</a></li>
-            </ul>
-        </aside>
-
     </main>
+    <div id="overlay-contatti" class="overlay" hidden>
+        <div class="modal">
+            <button id="chiudi-contatti" type="button" class="close">✕</button>
+            <form id="form-contatti" action="#" method="POST">
+
+                <p>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                </p>
+
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="tu@esempio.it" required>
+                </p>
+
+                <p>
+                    <label for="motivo">Motivo del contatto</label><br>
+                    <select id="motivo" name="motivo">
+                        <option value="lavoro">Proposta di lavoro</option>
+                        <option value="collaborazione">Collaborazione su un progetto</option>
+                        <option value="info">Richiesta di informazioni</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="data">Data preferita per la risposta</label><br>
+                    <input type="date" id="data" name="data">
+                </p>
+
+                <p>
+                    <label for="messaggio">Messaggio</label><br>
+                    <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..."
+                        required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="consenso" name="consenso" required>
+                    <label for="consenso">Accetto di essere ricontattato all'indirizzo indicato</label>
+                </p>
+
+                <p>
+                    <button type="submit" class="btn-submit">Invia</button>
+                </p>
+
+            </form>
+        </div>
+    </div>
     <br>
+    <a href="#site-header" class="back-to-top" aria-label="Torna in cima">⬆️</a>
     <footer id="site-footer">
         <div class="icon-github">
             <ion-icon name="logo-github"></ion-icon>
@@ -275,6 +222,7 @@
         &copy;2026 Lorenzo Melis - Costruito a mano durante la prima settimana del corso Epicode
     </footer>
     <!--Script ionicons-->
+    <script src="assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
