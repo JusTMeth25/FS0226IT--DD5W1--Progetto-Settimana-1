@@ -46,6 +46,10 @@ body {
 
 /*nav*/
 
+#site-header nav ul li:first-child {
+  order: 99;
+}
+
 #site-header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -154,8 +158,8 @@ table th {
   border-radius: 999px;
 }
 
-.skills li:first-child { 
-  background-color: #F2B90E;
+.skills li:first-child {
+  background-color: #f2b90e;
 }
 
 /*table esperienze*/
@@ -294,13 +298,21 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  cursor: pointer;
 }
 
 .project {
+  position: relative;
   display: flex;
+  flex-direction: column;
   flex: 1 1 260px;
   padding: 12px;
   border-radius: 4px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .project:nth-of-type(odd) {
@@ -322,13 +334,13 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 2px 8px;
-  margin-left: 12px;
+  padding: 4px 12px;
   background-color: red;
   color: #ffffff;
   border-radius: 0 4px 0 4px;
   vertical-align: middle;
   font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .project h3,
@@ -609,12 +621,30 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #site-header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #site-header nav ul li {
+    width: 100%;
+  }
+  #site-header nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media (min-width: 1200px) {
   h1 {
     font-size: clamp(4rem, 6vw, 10rem);
   }
   h2 {
     font-size: clamp(1.3rem, 4vw, 1.8rem);
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -653,7 +683,7 @@ button:hover {
   right: 10px;
   width: auto;
   padding: 8px 50px;
-  z-index:1;
+  z-index: 1;
   cursor: pointer;
 }
 
